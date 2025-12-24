@@ -30,6 +30,9 @@ def six():
 # open OS With Qemu + Qcow2
 def seven():
     print("\nqemu-system-x86_64 -m 2048 -cpu qemu64 -smp 2 -hda test-one.qcow2 -boot d -cdrom archcraft-2025.iso -vga virtio -display gtk")
+def eight():
+    print("python -m http.server 8080\n")
+    print("TO OPEN THE Local Host SERVER\n\nhttp://localhost:8080")
 # About Me
 def am():
     print(r"""
@@ -56,6 +59,7 @@ menu = {
     5:five,
     6:six,
     7:seven,
+    8.eight,
     99:am,
     98:tk
 }
@@ -75,7 +79,7 @@ while True:
       
 """)
     try:
-         main =int(input("\n1.Remove USB\n2.Share OS TO USB\n3.Run js File\n4.Open OS With Qemu qcow2\n5.low Brightness\n6.qcow2\n7.open OS With Qemu + Qcow2\n98.TikTok\n99.About Me\n0.exit\n: "))
+         main =int(input("\n1.Remove USB\n2.Share OS TO USB\n3.Run js File\n4.Open OS With Qemu qcow2\n5.low Brightness\n6.qcow2\n7.open OS With Qemu + Qcow2\n8.local Host\n98.TikTok\n99.About Me\n0.exit\n: "))
          if main == 0:
             break
          menu.get(main, soon)()
